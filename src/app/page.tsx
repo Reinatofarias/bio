@@ -18,6 +18,7 @@ export default function Home() {
     <Container className="flex flex-col items-center justify-center">
       <HeroSection profile={data.profile} />
       <LinksSection links={data.links} />
+      <ProductsSection products={data.products} />
       <MentorshipCTA />
       <FooterSection footer={data.footer} />
     </Container>

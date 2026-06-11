@@ -9,7 +9,7 @@ export function MentorshipCTA() {
         initial: { opacity: 0, y: 20 },
         animate: { opacity: 1, y: 0, transition: { duration: 0.6 } },
       }}
-      className="mt-12 md:mt-24 w-full flex flex-col items-center gap-4 px-4 py-8"
+      className="mt-4 md:mt-8 w-full flex flex-col items-center gap-4 px-4 py-8"
     >
       <h3 className="text-zinc-200 text-sm md:text-base font-medium uppercase tracking-[0.1em]">
         Transforme sua carreira e negócio
