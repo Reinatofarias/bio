@@ -5,6 +5,12 @@ import { motion } from "framer-motion";
 export function GradientBackground() {
   return (
     <div className="fixed inset-0 -z-10 h-full w-full bg-[#000000]">
+      {/* Custom Background Image */}
+      <div 
+        className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat opacity-30"
+        style={{ backgroundImage: "url('/images/BG.png')" }}
+      />
+
       {/* Top right gradient - animated (Cyan/Blue to match the right side of the hero image) */}
       <motion.div 
         animate={{ 
