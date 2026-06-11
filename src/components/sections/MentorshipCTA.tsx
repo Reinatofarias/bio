@@ -18,7 +18,7 @@ export function MentorshipCTA() {
         href="https://wa.me/5581985647633?text=Olá%20Renato!%20Quero%20ser%20mentoreado."
         target="_blank"
         rel="noopener noreferrer"
-        className="group relative flex items-center justify-center gap-2 px-6 py-4 w-full max-w-[90%] md:max-w-md rounded-md bg-white/10 backdrop-blur-md border border-white/30 bg-gradient-to-r from-[#ffd700] to-[#ffdf00] text-white font-bold text-base md:text-lg shadow-[0_0_30px_rgba(255,215,0,0.4)] hover:scale-[1.03] transition-all hover:shadow-[0_0_40px_rgba(255,215,0,0.7)]"
+        className="group relative flex items-center justify-center gap-2 px-6 py-4 w-full max-w-[90%] md:max-w-md rounded-md bg-white/10 backdrop-blur-md border border-white/30 bg-gradient-to-r from-[#ffd700]/30 to-[#ffdf00]/30 text-white font-bold text-base md:text-lg shadow-[0_0_30px_rgba(255,215,0,0.4)] hover:scale-[1.03] transition-all hover:shadow-[0_0_40px_rgba(255,215,0,0.7)]"
       >
         Quero ser mentoreado por Renato
         <ArrowUpRight className="w-5 h-5 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
