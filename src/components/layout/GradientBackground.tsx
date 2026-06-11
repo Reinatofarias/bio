@@ -18,28 +18,28 @@ export function GradientBackground() {
       {/* Top right gradient - animated (Golden glow) */}
       <motion.div 
         animate={{ 
-          scale: [1, 1.5, 1],
-          opacity: [0.6, 1, 0.6],
-          x: [0, -50, 0],
-          y: [0, 40, 0]
+          scale: [1, 1.2, 1],
+          opacity: [0.3, 0.5, 0.3],
+          x: [0, -30, 0],
+          y: [0, 20, 0]
         }}
         transition={{ 
           duration: 6, 
           repeat: Infinity, 
           ease: "easeInOut" 
         }}
-        className="absolute top-0 right-0 -translate-y-12 translate-x-1/3 blur-[100px] z-10 pointer-events-none"
+        className="absolute top-0 right-0 -translate-y-12 translate-x-1/3 blur-[120px] md:blur-[150px] z-10 pointer-events-none"
       >
-        <div className="h-[400px] w-[400px] rounded-full bg-gradient-to-bl from-[#ffd700]/50 to-[#ffb300]/40 md:h-[600px] md:w-[600px]" />
+        <div className="h-[300px] w-[300px] rounded-full bg-gradient-to-bl from-[#ffd700]/30 to-[#ffb300]/20 md:h-[500px] md:w-[500px]" />
       </motion.div>
 
       {/* Bottom left gradient - animated (Golden glow) */}
       <motion.div 
         animate={{ 
-          scale: [1, 1.6, 1],
-          opacity: [0.5, 0.9, 0.5],
-          x: [0, 60, 0],
-          y: [0, -40, 0]
+          scale: [1, 1.3, 1],
+          opacity: [0.2, 0.4, 0.2],
+          x: [0, 40, 0],
+          y: [0, -20, 0]
         }}
         transition={{ 
           duration: 8, 
@@ -47,9 +47,9 @@ export function GradientBackground() {
           ease: "easeInOut",
           delay: 1 
         }}
-        className="absolute bottom-0 left-0 translate-y-1/3 -translate-x-1/3 blur-[100px] z-10 pointer-events-none"
+        className="absolute bottom-0 left-0 translate-y-1/3 -translate-x-1/3 blur-[120px] md:blur-[150px] z-10 pointer-events-none"
       >
-        <div className="h-[500px] w-[500px] rounded-full bg-gradient-to-tr from-[#ffb300]/50 to-[#ffd700]/30 md:h-[700px] md:w-[700px]" />
+        <div className="h-[400px] w-[400px] rounded-full bg-gradient-to-tr from-[#ffb300]/30 to-[#ffd700]/15 md:h-[600px] md:w-[600px]" />
       </motion.div>
 
       {/* Grid pattern overlay */}

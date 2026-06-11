@@ -47,7 +47,7 @@ export function HeroSection({ profile }: HeroSectionProps) {
             src="/images/logo-renato.png"
             alt={profile.name}
             fill
-            className="object-contain"
+            className="object-contain drop-shadow-[0_4px_15px_rgba(0,0,0,0.8)]"
             priority
           />
         </motion.div>
