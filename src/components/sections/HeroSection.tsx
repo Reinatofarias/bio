@@ -25,8 +25,8 @@ export function HeroSection({ profile }: HeroSectionProps) {
           variants={fadeIn} 
           className="relative w-full max-w-3xl mx-auto aspect-[4/3] md:aspect-[16/9]"
           style={{ 
-            WebkitMaskImage: 'radial-gradient(ellipse at 50% 50%, black 30%, transparent 60%)', 
-            maskImage: 'radial-gradient(ellipse at 50% 50%, black 30%, transparent 60%)' 
+            WebkitMaskImage: 'radial-gradient(50% 50% at 50% 50%, black 80%, transparent 100%)', 
+            maskImage: 'radial-gradient(50% 50% at 50% 50%, black 80%, transparent 100%)' 
           }}
         >
           <Image
