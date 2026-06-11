@@ -3,8 +3,19 @@
 import { motion } from "framer-motion";
 
 export function GradientBackground() {
+  const particles = [
+    { top: "15%", left: "20%", size: 4, duration: 12, delay: 0 },
+    { top: "35%", left: "80%", size: 6, duration: 18, delay: 2 },
+    { top: "65%", left: "15%", size: 3, duration: 15, delay: 5 },
+    { top: "25%", left: "50%", size: 5, duration: 14, delay: 1 },
+    { top: "85%", left: "65%", size: 4, duration: 20, delay: 3 },
+    { top: "45%", left: "90%", size: 7, duration: 22, delay: 4 },
+    { top: "75%", left: "30%", size: 3, duration: 16, delay: 6 },
+    { top: "55%", left: "45%", size: 5, duration: 19, delay: 2 },
+  ];
+
   return (
-    <div className="fixed inset-0 -z-10 h-full w-full bg-[#000000]">
+    <div className="fixed inset-0 w-full h-full -z-10 bg-[#0a0a0a] overflow-hidden">
       {/* Custom Background Image */}
       <div 
         className="absolute inset-0 z-0 bg-cover bg-[center_top] md:bg-[center_20%] bg-no-repeat opacity-25"
@@ -15,42 +26,34 @@ export function GradientBackground() {
         }}
       />
 
-      {/* Top right gradient - animated (Golden glow) */}
-      <motion.div 
-        animate={{ 
-          scale: [1, 1.2, 1],
-          opacity: [0.3, 0.5, 0.3],
-          x: [0, -30, 0],
-          y: [0, 20, 0]
-        }}
-        transition={{ 
-          duration: 6, 
-          repeat: Infinity, 
-          ease: "easeInOut" 
-        }}
-        className="absolute top-0 right-0 -translate-y-12 translate-x-1/3 blur-[120px] md:blur-[150px] z-10 pointer-events-none"
-      >
-        <div className="h-[300px] w-[300px] rounded-full bg-gradient-to-bl from-[#ffd700]/30 to-[#ffb300]/20 md:h-[500px] md:w-[500px]" />
-      </motion.div>
-
-      {/* Bottom left gradient - animated (Golden glow) */}
-      <motion.div 
-        animate={{ 
-          scale: [1, 1.3, 1],
-          opacity: [0.2, 0.4, 0.2],
-          x: [0, 40, 0],
-          y: [0, -20, 0]
-        }}
-        transition={{ 
-          duration: 8, 
-          repeat: Infinity, 
-          ease: "easeInOut",
-          delay: 1 
-        }}
-        className="absolute bottom-0 left-0 translate-y-1/3 -translate-x-1/3 blur-[120px] md:blur-[150px] z-10 pointer-events-none"
-      >
-        <div className="h-[400px] w-[400px] rounded-full bg-gradient-to-tr from-[#ffb300]/30 to-[#ffd700]/15 md:h-[600px] md:w-[600px]" />
-      </motion.div>
+      {/* Partículas Douradas Flutuantes (Premium Effect) */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none z-10">
+        {particles.map((p, i) => (
+          <motion.div
+            key={i}
+            className="absolute rounded-full bg-[#ffd700]"
+            style={{
+              top: p.top,
+              left: p.left,
+              width: p.size,
+              height: p.size,
+              boxShadow: "0 0 15px 3px rgba(255, 215, 0, 0.6)",
+            }}
+            animate={{
+              y: [0, -150],
+              x: [0, Math.random() * 50 - 25],
+              opacity: [0, 0.8, 0],
+              scale: [0.5, 1.5, 0.5],
+            }}
+            transition={{
+              duration: p.duration,
+              repeat: Infinity,
+              ease: "linear",
+              delay: p.delay,
+            }}
+          />
+        ))}
+      </div>
 
       {/* Grid pattern overlay */}
       <div 
