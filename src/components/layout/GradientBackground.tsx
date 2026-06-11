@@ -15,7 +15,7 @@ export function GradientBackground() {
         }}
       />
 
-      {/* Top right gradient - animated (Cyan/Blue to match the right side of the hero image) */}
+      {/* Top right gradient - animated (Golden glow) */}
       <motion.div 
         animate={{ 
           scale: [1, 1.5, 1],
@@ -30,10 +30,10 @@ export function GradientBackground() {
         }}
         className="absolute top-0 right-0 -translate-y-12 translate-x-1/3 blur-[100px] z-10 pointer-events-none"
       >
-        <div className="h-[400px] w-[400px] rounded-full bg-gradient-to-bl from-cyan-600/70 to-blue-600/50 md:h-[600px] md:w-[600px]" />
+        <div className="h-[400px] w-[400px] rounded-full bg-gradient-to-bl from-[#ffd700]/50 to-[#ffb300]/40 md:h-[600px] md:w-[600px]" />
       </motion.div>
 
-      {/* Bottom left gradient - animated (Orange/Amber to match the left side of the hero image) */}
+      {/* Bottom left gradient - animated (Golden glow) */}
       <motion.div 
         animate={{ 
           scale: [1, 1.6, 1],
@@ -49,7 +49,7 @@ export function GradientBackground() {
         }}
         className="absolute bottom-0 left-0 translate-y-1/3 -translate-x-1/3 blur-[100px] z-10 pointer-events-none"
       >
-        <div className="h-[500px] w-[500px] rounded-full bg-gradient-to-tr from-orange-500/60 to-amber-600/40 md:h-[700px] md:w-[700px]" />
+        <div className="h-[500px] w-[500px] rounded-full bg-gradient-to-tr from-[#ffb300]/50 to-[#ffd700]/30 md:h-[700px] md:w-[700px]" />
       </motion.div>
 
       {/* Grid pattern overlay */}
