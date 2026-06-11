@@ -1,7 +1,7 @@
 import { Container } from "@/components/layout/Container";
 import { HeroSection } from "@/components/sections/HeroSection";
 import { LinksSection } from "@/components/sections/LinksSection";
-import { ProductsSection } from "@/components/sections/ProductsSection";
+
 import { StatsSection } from "@/components/sections/StatsSection";
 import { AboutSection } from "@/components/sections/AboutSection";
 import { SocialSection } from "@/components/sections/SocialSection";
@@ -18,7 +18,7 @@ export default function Home() {
     <Container className="flex flex-col items-center justify-center">
       <HeroSection profile={data.profile} />
       <LinksSection links={data.links} />
-      <ProductsSection products={data.products} />
+
       <MentorshipCTA />
       <FooterSection footer={data.footer} />
     </Container>
