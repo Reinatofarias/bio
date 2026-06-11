@@ -1,0 +1,237 @@
+{
+  "profile": {
+    "name": "Renato Farias",
+    "role": "Estrategista Digital | Fundador Origo Company & Openova",
+    "tagline": "Transformo marcas em máquinas de autoridade e conversão digital. Estratégia, performance e resultados reais para quem quer dominar o mercado.",
+    "avatar": "/images/avatar.jpg",
+    "badges": [
+      {
+        "icon": "🚀",
+        "text": "Estrategista Digital"
+      },
+      {
+        "icon": "🏢",
+        "text": "3 Empresas"
+      }
+    ],
+    "cta": {
+      "text": "Fale Comigo Agora",
+      "href": "https://wa.me/5581985647633?text=Olá%20Renato!%20Vi%20seu%20link%20e%20gostaria%20de%20conversar.",
+      "variant": "primary"
+    }
+  },
+  "links": [
+    {
+      "id": "origo",
+      "title": "Origo Company",
+      "description": "Soluções estratégicas de alta performance para empresas que querem escalar",
+      "href": "https://lp.origoprod.com",
+      "icon": "Building2",
+      "image": "/images/origo-company.png",
+      "variant": "banner",
+      "external": true,
+      "order": 1,
+      "active": true
+    },
+    {
+      "id": "openova",
+      "title": "Openova",
+      "description": "Inovação digital e tecnologia para transformar seu negócio",
+      "href": "https://openova.com.br",
+      "icon": "Sparkles",
+      "image": "/images/Openova.png",
+      "variant": "banner",
+      "external": true,
+      "order": 3,
+      "active": true
+    },
+    {
+      "id": "whatsapp",
+      "title": "Fale Comigo no WhatsApp",
+      "description": "Atendimento direto e personalizado. Respondo rápido",
+      "href": "https://wa.me/5581985647633?text=Olá%20Renato!%20Vi%20seu%20link%20e%20gostaria%20de%20conversar.",
+      "icon": "MessageCircle",
+      "variant": "full",
+      "badge": "Online",
+      "external": true,
+      "order": 4,
+      "active": false
+    },
+    {
+      "id": "youtube",
+      "title": "Canal do YouTube",
+      "description": "Conteúdo estratégico sobre marketing digital e negócios",
+      "href": "https://www.youtube.com/@reinatofarias",
+      "icon": "Youtube",
+      "image": "/images/youtube.png",
+      "variant": "banner",
+      "external": true,
+      "order": 2,
+      "active": true
+    },
+    {
+      "id": "eleve",
+      "title": "Eleve Agência",
+      "description": "Marketing digital de alta performance para sua marca",
+      "href": "https://eleveagenciabr.vercel.app/",
+      "icon": "Instagram",
+      "image": "/images/Eleve.png",
+      "variant": "banner",
+      "external": true,
+      "order": 5,
+      "active": true
+    }
+  ],
+  "products": [
+    {
+      "id": "estrategia-digital",
+      "title": "Estratégia Digital Completa",
+      "description": "Diagnóstico completo + plano de ação personalizado para transformar sua presença digital e gerar resultados mensuráveis.",
+      "features": [
+        "Análise completa de mercado e concorrência",
+        "Estratégia digital personalizada",
+        "Plano de ação detalhado",
+        "Acompanhamento e otimização"
+      ],
+      "badge": "Destaque",
+      "cta": {
+        "text": "Quero Saber Mais",
+        "href": "https://wa.me/5581985647633?text=Olá%20Renato!%20Tenho%20interesse%20na%20Estratégia%20Digital%20Completa.",
+        "variant": "primary"
+      },
+      "featured": true,
+      "order": 1,
+      "active": true
+    },
+    {
+      "id": "branding",
+      "title": "Branding & Posicionamento",
+      "description": "Construção de marca forte com identidade visual, narrativa e posicionamento estratégico no digital.",
+      "features": [
+        "Identidade visual completa",
+        "Narrativa de marca",
+        "Guia de posicionamento",
+        "Estratégia de conteúdo"
+      ],
+      "cta": {
+        "text": "Conhecer Serviço",
+        "href": "https://wa.me/5581985647633?text=Olá%20Renato!%20Tenho%20interesse%20em%20Branding.",
+        "variant": "secondary"
+      },
+      "featured": false,
+      "order": 2,
+      "active": true
+    },
+    {
+      "id": "performance",
+      "title": "Marketing de Performance",
+      "description": "Campanhas de tráfego pago otimizadas para gerar leads qualificados e maximizar seu ROI.",
+      "features": [
+        "Google Ads & Meta Ads",
+        "Otimização de conversão",
+        "Relatórios detalhados",
+        "Gestão contínua"
+      ],
+      "cta": {
+        "text": "Quero Resultados",
+        "href": "https://wa.me/5581985647633?text=Olá%20Renato!%20Tenho%20interesse%20em%20Marketing%20de%20Performance.",
+        "variant": "secondary"
+      },
+      "featured": false,
+      "order": 3,
+      "active": true
+    }
+  ],
+  "testimonials": [],
+  "stats": [
+    {
+      "id": "empresas",
+      "value": "3",
+      "numericValue": 3,
+      "label": "Empresas Fundadas",
+      "order": 1
+    },
+    {
+      "id": "clientes",
+      "value": "+100",
+      "numericValue": 100,
+      "label": "Clientes Atendidos",
+      "prefix": "+",
+      "order": 2
+    },
+    {
+      "id": "experiencia",
+      "value": "10+",
+      "numericValue": 10,
+      "label": "Anos de Experiência",
+      "suffix": "+",
+      "order": 3
+    }
+  ],
+  "about": {
+    "text": "Sou Renato Farias, Estrategista Digital e fundador da Origo Company, Openova e Eleve Agência. Há mais de uma década, ajudo empresas e profissionais a transformarem sua presença digital em um motor de crescimento real.\n\nMinha missão é clara: criar estratégias que geram autoridade, atraem clientes qualificados e entregam resultados mensuráveis. Acredito que cada marca tem um potencial único — meu trabalho é desbloqueá-lo.",
+    "highlights": [
+      {
+        "icon": "📍",
+        "text": "Brasil"
+      },
+      {
+        "icon": "🏢",
+        "text": "Fundador Origo, Openova & Eleve"
+      },
+      {
+        "icon": "🎯",
+        "text": "Estratégia & Performance Digital"
+      }
+    ]
+  },
+  "social": [
+    {
+      "platform": "instagram",
+      "href": "https://www.instagram.com/elevebragencia/",
+      "ariaLabel": "Seguir Eleve Agência no Instagram",
+      "order": 1,
+      "active": true
+    },
+    {
+      "platform": "youtube",
+      "href": "https://www.youtube.com/@reinatofarias",
+      "ariaLabel": "Inscrever-se no YouTube",
+      "order": 2,
+      "active": true
+    }
+  ],
+  "seo": {
+    "title": "Renato Farias — Estrategista Digital | Links Oficiais",
+    "description": "Acesse todos os links, serviços e conteúdos de Renato Farias. Estrategista Digital, fundador da Origo Company, Openova e Eleve Agência. Fale comigo e transforme sua presença digital.",
+    "keywords": [
+      "Renato Farias",
+      "estrategista digital",
+      "Origo Company",
+      "Openova",
+      "Eleve Agência",
+      "marketing digital",
+      "estratégia digital",
+      "branding digital"
+    ],
+    "ogImage": "/images/og-image.jpg",
+    "canonical": "https://renatofarias.vercel.app",
+    "locale": "pt_BR",
+    "twitterHandle": ""
+  },
+  "analytics": {
+    "googleAnalyticsId": "",
+    "facebookPixelId": ""
+  },
+  "theme": {
+    "defaultMode": "dark",
+    "primaryColor": "#6366F1",
+    "secondaryColor": "#A855F7",
+    "accentColor": "#06B6D4"
+  },
+  "footer": {
+    "copyright": "© 2026 Renato Farias. Todos os direitos reservados.",
+    "tagline": "Estratégia que transforma. Resultados que comprovam.",
+    "cnpj": ""
+  }
+}
