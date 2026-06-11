@@ -8,7 +8,11 @@ export function GradientBackground() {
       {/* Custom Background Image */}
       <div 
         className="absolute inset-0 z-0 bg-cover bg-[center_top] md:bg-[center_20%] bg-no-repeat opacity-25"
-        style={{ backgroundImage: "url('/images/BG.png')" }}
+        style={{ 
+          backgroundImage: "url('/images/BG.png')",
+          WebkitMaskImage: 'radial-gradient(ellipse at 50% 50%, black 50%, transparent 100%)',
+          maskImage: 'radial-gradient(ellipse at 50% 50%, black 50%, transparent 100%)'
+        }}
       />
 
       {/* Top right gradient - animated (Cyan/Blue to match the right side of the hero image) */}
