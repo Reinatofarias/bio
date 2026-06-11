@@ -34,18 +34,6 @@
       "active": true
     },
     {
-      "id": "openova",
-      "title": "Openova",
-      "description": "Inovação digital e tecnologia para transformar seu negócio",
-      "href": "https://openova.com.br",
-      "icon": "Sparkles",
-      "image": "/images/Openova.png",
-      "variant": "banner",
-      "external": true,
-      "order": 3,
-      "active": true
-    },
-    {
       "id": "whatsapp",
       "title": "Fale Comigo no WhatsApp",
       "description": "Atendimento direto e personalizado. Respondo rápido",
