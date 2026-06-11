@@ -19,20 +19,20 @@ export function HeroSection({ profile }: HeroSectionProps) {
       className="flex flex-col items-center text-center w-full mb-0 relative"
     >
       <div className="relative w-full flex justify-center">
-        {/* Imagem de Fundo (Hero) com máscara radial estrita para ocultar as bordas de vez */}
+        {/* Imagem de Fundo (Hero) com máscara mais suave para mostrar mais o rosto */}
         <motion.div 
           variants={fadeIn} 
-          className="relative w-full max-w-2xl mx-auto aspect-[3/2]"
+          className="relative w-full max-w-3xl mx-auto aspect-[4/3] md:aspect-[16/9]"
           style={{ 
-            WebkitMaskImage: 'radial-gradient(closest-side, black 60%, transparent 100%)', 
-            maskImage: 'radial-gradient(closest-side, black 60%, transparent 100%)' 
+            WebkitMaskImage: 'radial-gradient(circle at 50% 40%, black 75%, transparent 100%)', 
+            maskImage: 'radial-gradient(circle at 50% 40%, black 75%, transparent 100%)' 
           }}
         >
           <Image
             src="/images/Image-hero.png"
             alt="Hero background"
             fill
-            className="object-contain"
+            className="object-cover object-[50%_20%]"
             priority
           />
         </motion.div>

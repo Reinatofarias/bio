@@ -7,7 +7,7 @@ export function GradientBackground() {
     <div className="fixed inset-0 -z-10 h-full w-full bg-[#000000]">
       {/* Custom Background Image */}
       <div 
-        className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat opacity-30"
+        className="absolute inset-0 z-0 bg-cover bg-[center_top] md:bg-[center_20%] bg-no-repeat opacity-25"
         style={{ backgroundImage: "url('/images/BG.png')" }}
       />
 
@@ -15,7 +15,7 @@ export function GradientBackground() {
       <motion.div 
         animate={{ 
           scale: [1, 1.5, 1],
-          opacity: [0.4, 0.7, 0.4],
+          opacity: [0.6, 1, 0.6],
           x: [0, -50, 0],
           y: [0, 40, 0]
         }}
@@ -24,16 +24,16 @@ export function GradientBackground() {
           repeat: Infinity, 
           ease: "easeInOut" 
         }}
-        className="absolute top-0 right-0 -translate-y-12 translate-x-1/3 blur-[100px]"
+        className="absolute top-0 right-0 -translate-y-12 translate-x-1/3 blur-[100px] z-10 pointer-events-none"
       >
-        <div className="h-[400px] w-[400px] rounded-full bg-gradient-to-bl from-cyan-600/50 to-blue-600/30 md:h-[600px] md:w-[600px]" />
+        <div className="h-[400px] w-[400px] rounded-full bg-gradient-to-bl from-cyan-600/70 to-blue-600/50 md:h-[600px] md:w-[600px]" />
       </motion.div>
 
       {/* Bottom left gradient - animated (Orange/Amber to match the left side of the hero image) */}
       <motion.div 
         animate={{ 
           scale: [1, 1.6, 1],
-          opacity: [0.3, 0.6, 0.3],
+          opacity: [0.5, 0.9, 0.5],
           x: [0, 60, 0],
           y: [0, -40, 0]
         }}
@@ -43,9 +43,9 @@ export function GradientBackground() {
           ease: "easeInOut",
           delay: 1 
         }}
-        className="absolute bottom-0 left-0 translate-y-1/3 -translate-x-1/3 blur-[100px]"
+        className="absolute bottom-0 left-0 translate-y-1/3 -translate-x-1/3 blur-[100px] z-10 pointer-events-none"
       >
-        <div className="h-[500px] w-[500px] rounded-full bg-gradient-to-tr from-orange-500/40 to-amber-600/20 md:h-[700px] md:w-[700px]" />
+        <div className="h-[500px] w-[500px] rounded-full bg-gradient-to-tr from-orange-500/60 to-amber-600/40 md:h-[700px] md:w-[700px]" />
       </motion.div>
 
       {/* Grid pattern overlay */}
