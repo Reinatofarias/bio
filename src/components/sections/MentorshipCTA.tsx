@@ -20,7 +20,7 @@ export function MentorshipCTA() {
         rel="noopener noreferrer"
         className="group relative flex items-center justify-center gap-2 px-4 md:px-6 py-4 w-full max-w-[95%] md:max-w-md rounded-md bg-white/10 backdrop-blur-md border border-white/30 bg-gradient-to-r from-[#ffd700]/30 to-[#ffdf00]/30 text-white font-bold text-sm md:text-lg shadow-[0_0_30px_rgba(255,215,0,0.4)] hover:scale-[1.03] transition-all hover:shadow-[0_0_40px_rgba(255,215,0,0.7)]"
       >
-        <span className="text-center">Quero ser mentoreado por Renato</span>
+        <span className="text-center">Mentoria Individual | Inscrições</span>
         <ArrowUpRight className="w-4 h-4 md:w-5 md:h-5 flex-shrink-0 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
       </a>
     </motion.div>
