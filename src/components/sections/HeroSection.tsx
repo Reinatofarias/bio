@@ -17,7 +17,7 @@ export function HeroSection({ profile }: HeroSectionProps) {
       variants={staggerContainer}
       initial="initial"
       animate="animate"
-      className="flex flex-col items-center text-center w-full mb-0 relative"
+      className="flex flex-col items-center text-center w-full mb-0 relative overflow-hidden"
     >
       <div className="relative w-full flex justify-center">
         {/* Imagem de Fundo (Hero) com máscara mais suave para mostrar mais o rosto */}
