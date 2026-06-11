@@ -6,6 +6,7 @@ import { StatsSection } from "@/components/sections/StatsSection";
 import { AboutSection } from "@/components/sections/AboutSection";
 import { SocialSection } from "@/components/sections/SocialSection";
 import { FooterSection } from "@/components/sections/FooterSection";
+import { MentorshipCTA } from "@/components/sections/MentorshipCTA";
 
 import config from "@/data/config.json";
 import { Config } from "@/data/types";
@@ -17,6 +18,7 @@ export default function Home() {
     <Container className="flex flex-col items-center justify-center">
       <HeroSection profile={data.profile} />
       <LinksSection links={data.links} />
+      <MentorshipCTA />
       <FooterSection footer={data.footer} />
     </Container>
   );
