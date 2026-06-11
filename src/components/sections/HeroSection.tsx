@@ -41,7 +41,7 @@ export function HeroSection({ profile }: HeroSectionProps) {
         {/* Logo sobreposta com posicionamento absoluto */}
         <motion.div 
           variants={slideUp} 
-          className="absolute bottom-0 translate-y-[25%] md:translate-y-[20%] w-[110%] md:w-[100%] max-w-[550px] md:max-w-[800px] h-32 md:h-48 z-20 pointer-events-none"
+          className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-[25%] md:translate-y-[20%] w-[90%] sm:w-[95%] md:w-full max-w-[550px] md:max-w-[800px] h-24 sm:h-32 md:h-48 z-20 pointer-events-none"
         >
           <Image
             src="/images/logo-renato.png"
