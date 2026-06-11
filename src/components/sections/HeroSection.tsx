@@ -44,7 +44,7 @@ export function HeroSection({ profile }: HeroSectionProps) {
           className="absolute bottom-0 translate-y-[25%] md:translate-y-[20%] w-[110%] md:w-[100%] max-w-[550px] md:max-w-[800px] h-32 md:h-48 z-20 pointer-events-none"
         >
           <Image
-            src="/images/logo2.png"
+            src="/images/logo-renato.png"
             alt={profile.name}
             fill
             className="object-contain"
