@@ -16,11 +16,13 @@ export function LinkCard({ link }: LinkCardProps) {
   // @ts-expect-error - Dynamic import from lucide-react
   const IconComponent = LucideIcons[link.icon] || LucideIcons.Link;
 
-  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    e.preventDefault();
+  const handleClick = () => {
     trackClick(link.id, link.title);
-    window.open(link.href, link.external ? '_blank' : '_self', 'noopener,noreferrer');
   };
+
+  const linkProps = link.external
+    ? { target: "_blank", rel: "noopener noreferrer" }
+    : {};
 
   const isFeatured = link.variant === 'featured';
 
@@ -29,26 +31,38 @@ export function LinkCard({ link }: LinkCardProps) {
       <motion.a
         href={link.href}
         onClick={handleClick}
-        whileHover={{ scale: 1.02 }}
-        whileTap={{ scale: 0.98 }}
-        className="relative block w-full aspect-[2/1] rounded-2xl overflow-hidden shadow-lg border border-white/10 group mt-4 mb-2"
+        {...linkProps}
+        whileHover={{ y: -3 }}
+        whileTap={{ scale: 0.99 }}
+        transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
+        aria-label={link.description ? `${link.title}: ${link.description}` : link.title}
+        className="relative block w-full aspect-[2/1] rounded-2xl overflow-hidden border border-white/[0.08] shadow-[0_20px_50px_-20px_rgba(0,0,0,0.9)] hover:border-[#d4a937]/40 hover:shadow-[0_24px_60px_-20px_rgba(212,169,55,0.25)] transition-[border-color,box-shadow] duration-500 group mt-4 mb-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#d4a937] focus-visible:ring-offset-2 focus-visible:ring-offset-black"
       >
         {link.image && (
           <Image
             src={link.image}
             alt={link.title}
             fill
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            priority={link.order <= 3}
-            className="object-cover transition-transform duration-500 group-hover:scale-105"
+            sizes="(max-width: 768px) 100vw, 640px"
+            priority={link.order <= 1}
+            className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
           />
         )}
-        {/* Efeito de Glare Automático (Funciona no Mobile!) */}
-        <motion.div 
-          animate={{ x: ["-150%", "250%"] }}
-          transition={{ duration: 1.5, repeat: Infinity, repeatDelay: 3, ease: "easeInOut" }}
-          className="absolute inset-0 bg-gradient-to-tr from-white/0 via-white/20 to-white/0 pointer-events-none" 
+        {/* Brilho único quando o banner entra na tela, e de novo no hover */}
+        <motion.div
+          initial={{ x: "-120%" }}
+          whileInView={{ x: "120%" }}
+          viewport={{ once: true, amount: 0.6 }}
+          transition={{ duration: 1.4, ease: "easeInOut", delay: 0.2 }}
+          aria-hidden="true"
+          className="absolute inset-0 bg-gradient-to-r from-transparent via-white/[0.12] to-transparent skew-x-[-20deg] pointer-events-none"
         />
+        <div
+          aria-hidden="true"
+          className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out bg-gradient-to-r from-transparent via-white/[0.10] to-transparent skew-x-[-20deg] pointer-events-none"
+        />
+        {/* Filete interno para acabamento */}
+        <div aria-hidden="true" className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-white/[0.06] pointer-events-none" />
       </motion.a>
     );
   }
@@ -57,6 +71,7 @@ export function LinkCard({ link }: LinkCardProps) {
     <motion.a
       href={link.href}
       onClick={handleClick}
+      {...linkProps}
       whileHover={{ scale: 1.02 }}
       whileTap={{ scale: 0.98 }}
       className={cn(

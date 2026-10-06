@@ -17,6 +17,7 @@ export default function Home() {
   return (
     <Container className="flex flex-col items-center justify-center">
       <HeroSection profile={data.profile} />
+      <SocialSection socials={data.social} />
       <LinksSection links={data.links} />
 
       <MentorshipCTA />

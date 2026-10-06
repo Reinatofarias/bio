@@ -20,10 +20,10 @@ export function SocialSection({ socials }: SocialSectionProps) {
       initial="initial"
       whileInView="animate"
       viewport={{ once: true, margin: "-50px" }}
-      className="flex justify-center gap-4 mb-8"
+      className="flex justify-center gap-4 mt-9 sm:mt-12 md:mt-14 mb-2"
     >
-      {activeSocials.map((social, idx) => (
-        <motion.div key={idx} variants={staggerItem}>
+      {activeSocials.map((social) => (
+        <motion.div key={social.platform} variants={staggerItem}>
           <SocialButton social={social} />
         </motion.div>
       ))}

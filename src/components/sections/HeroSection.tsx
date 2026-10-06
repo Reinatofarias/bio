@@ -2,9 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { ArrowUpRight } from "lucide-react";
 import { Profile } from "@/data/types";
-import { Button } from "@/components/Button";
 import { fadeIn, slideUp, staggerContainer } from "@/lib/animations";
 
 interface HeroSectionProps {
@@ -19,6 +17,9 @@ export function HeroSection({ profile }: HeroSectionProps) {
       animate="animate"
       className="flex flex-col items-center text-center w-full mb-0 relative overflow-hidden"
     >
+      <h1 className="sr-only">
+        {profile.name} | {profile.role}
+      </h1>
       <div className="relative w-full flex justify-center">
         {/* Imagem de Fundo (Hero) com máscara mais suave para mostrar mais o rosto */}
         <motion.div 
@@ -31,7 +32,7 @@ export function HeroSection({ profile }: HeroSectionProps) {
         >
           <Image
             src="/images/Image-hero.png"
-            alt="Hero background"
+            alt=""
             fill
             className="object-cover object-[50%_20%]"
             priority
@@ -45,7 +46,7 @@ export function HeroSection({ profile }: HeroSectionProps) {
         >
           <Image
             src="/images/logo-renato.png"
-            alt={profile.name}
+            alt=""
             fill
             className="object-contain drop-shadow-[0_4px_15px_rgba(0,0,0,0.8)]"
             priority

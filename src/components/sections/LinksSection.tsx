@@ -23,11 +23,11 @@ export function LinksSection({ links }: LinksSectionProps) {
       className="w-full flex flex-col gap-4 mb-4"
     >
       <motion.div variants={staggerItem} className="w-full flex items-center justify-center gap-4 mb-2 mt-4">
-        <div className="h-px bg-gradient-to-r from-transparent via-white/20 to-transparent flex-1" />
-        <h2 className="text-xs md:text-sm font-bold tracking-[0.2em] uppercase text-transparent bg-clip-text bg-gradient-to-r from-zinc-100 to-zinc-500">
+        <div className="h-px bg-gradient-to-r from-transparent via-[#d4a937]/40 to-transparent flex-1" />
+        <h2 className="text-[11px] md:text-xs font-semibold tracking-[0.35em] uppercase text-[#e8cf86]/80">
           Links Úteis
         </h2>
-        <div className="h-px bg-gradient-to-r from-transparent via-white/20 to-transparent flex-1" />
+        <div className="h-px bg-gradient-to-r from-transparent via-[#d4a937]/40 to-transparent flex-1" />
       </motion.div>
 
       {activeLinks.map((link) => (
