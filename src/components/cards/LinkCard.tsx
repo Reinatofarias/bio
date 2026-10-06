@@ -16,11 +16,13 @@ export function LinkCard({ link }: LinkCardProps) {
   // @ts-expect-error - Dynamic import from lucide-react
   const IconComponent = LucideIcons[link.icon] || LucideIcons.Link;
 
-  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    e.preventDefault();
+  const handleClick = () => {
     trackClick(link.id, link.title);
-    window.open(link.href, link.external ? '_blank' : '_self', 'noopener,noreferrer');
   };
+
+  const linkProps = link.external
+    ? { target: "_blank", rel: "noopener noreferrer" }
+    : {};
 
   const isFeatured = link.variant === 'featured';
 
@@ -29,9 +31,11 @@ export function LinkCard({ link }: LinkCardProps) {
       <motion.a
         href={link.href}
         onClick={handleClick}
+        {...linkProps}
         whileHover={{ scale: 1.02 }}
         whileTap={{ scale: 0.98 }}
-        className="relative block w-full aspect-[2/1] rounded-2xl overflow-hidden shadow-lg border border-white/10 group mt-4 mb-2"
+        aria-label={link.description ? `${link.title}: ${link.description}` : link.title}
+        className="relative block w-full aspect-[2/1] rounded-2xl overflow-hidden shadow-lg border border-white/10 group mt-4 mb-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#d4a937] focus-visible:ring-offset-2 focus-visible:ring-offset-black"
       >
         {link.image && (
           <Image
@@ -47,7 +51,8 @@ export function LinkCard({ link }: LinkCardProps) {
         <motion.div 
           animate={{ x: ["-150%", "250%"] }}
           transition={{ duration: 1.5, repeat: Infinity, repeatDelay: 3, ease: "easeInOut" }}
-          className="absolute inset-0 bg-gradient-to-tr from-white/0 via-white/20 to-white/0 pointer-events-none" 
+          aria-hidden="true"
+          className="absolute inset-0 bg-gradient-to-tr from-white/0 via-white/20 to-white/0 pointer-events-none"
         />
       </motion.a>
     );
@@ -57,6 +62,7 @@ export function LinkCard({ link }: LinkCardProps) {
     <motion.a
       href={link.href}
       onClick={handleClick}
+      {...linkProps}
       whileHover={{ scale: 1.02 }}
       whileTap={{ scale: 0.98 }}
       className={cn(

@@ -4,23 +4,23 @@ import { motion } from "framer-motion";
 
 export function GradientBackground() {
   const particles = [
-    { top: "15%", left: "20%", size: 4, duration: 12, delay: 0 },
-    { top: "35%", left: "80%", size: 6, duration: 18, delay: 2 },
-    { top: "65%", left: "15%", size: 3, duration: 15, delay: 5 },
-    { top: "25%", left: "50%", size: 5, duration: 14, delay: 1 },
-    { top: "85%", left: "65%", size: 4, duration: 20, delay: 3 },
-    { top: "45%", left: "90%", size: 7, duration: 22, delay: 4 },
-    { top: "75%", left: "30%", size: 3, duration: 16, delay: 6 },
-    { top: "55%", left: "45%", size: 5, duration: 19, delay: 2 },
+    { top: "15%", left: "20%", size: 4, duration: 12, delay: 0, drift: 12 },
+    { top: "35%", left: "80%", size: 6, duration: 18, delay: 2, drift: -18 },
+    { top: "65%", left: "15%", size: 3, duration: 15, delay: 5, drift: 20 },
+    { top: "25%", left: "50%", size: 5, duration: 14, delay: 1, drift: -8 },
+    { top: "85%", left: "65%", size: 4, duration: 20, delay: 3, drift: 15 },
+    { top: "45%", left: "90%", size: 7, duration: 22, delay: 4, drift: -22 },
+    { top: "75%", left: "30%", size: 3, duration: 16, delay: 6, drift: 6 },
+    { top: "55%", left: "45%", size: 5, duration: 19, delay: 2, drift: -14 },
   ];
 
   return (
-    <div className="fixed inset-0 w-full h-full -z-10 bg-[#0a0a0a] overflow-hidden">
+    <div aria-hidden="true" className="fixed inset-0 w-full h-full -z-10 bg-[#0a0a0a] overflow-hidden">
       {/* Custom Background Image */}
       <div 
         className="absolute inset-0 z-0 bg-cover bg-[center_top] md:bg-[center_20%] bg-no-repeat opacity-25"
         style={{ 
-          backgroundImage: "url('/images/BG.png')",
+          backgroundImage: "url('/images/BG.webp')",
           WebkitMaskImage: 'radial-gradient(50% 50% at 50% 50%, black 80%, transparent 100%)',
           maskImage: 'radial-gradient(50% 50% at 50% 50%, black 80%, transparent 100%)'
         }}
@@ -41,7 +41,7 @@ export function GradientBackground() {
             }}
             animate={{
               y: [0, -150],
-              x: [0, Math.random() * 50 - 25],
+              x: [0, p.drift],
               opacity: [0, 0.8, 0],
               scale: [0.5, 1.5, 0.5],
             }}

@@ -1,7 +1,8 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { GradientBackground } from "@/components/layout/GradientBackground";
+import { MotionProvider } from "@/components/layout/MotionProvider";
 import config from "@/data/config.json";
 import { Config } from "@/data/types";
 
@@ -22,6 +23,9 @@ export const metadata: Metadata = {
   title: typedConfig.seo.title,
   description: typedConfig.seo.description,
   keywords: typedConfig.seo.keywords,
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: typedConfig.seo.title,
     description: typedConfig.seo.description,
@@ -45,6 +49,10 @@ export const metadata: Metadata = {
     creator: typedConfig.seo.twitterHandle,
     images: [typedConfig.seo.ogImage],
   },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#000000",
 };
 
 export default function RootLayout({
@@ -102,6 +110,7 @@ export default function RootLayout({
         {typedConfig.analytics?.facebookPixelId && (
           <noscript>
             <img
+              alt=""
               height="1"
               width="1"
               style={{ display: "none" }}
@@ -110,10 +119,12 @@ export default function RootLayout({
           </noscript>
         )}
 
-        <GradientBackground />
-        <main className="relative z-10 w-full min-h-screen py-12 md:py-20 flex flex-col items-center">
-          {children}
-        </main>
+        <MotionProvider>
+          <GradientBackground />
+          <main className="relative z-10 w-full min-h-screen py-12 md:py-20 flex flex-col items-center">
+            {children}
+          </main>
+        </MotionProvider>
       </body>
     </html>
   );
