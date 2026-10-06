@@ -1,7 +1,7 @@
 {
   "profile": {
     "name": "Renato Farias",
-    "role": "Estrategista Digital | Fundador Origo Company & Openova",
+    "role": "Estrategista Digital | Fundador Origo Company & Eleve Agência",
     "tagline": "Transformo marcas em máquinas de autoridade e conversão digital. Estratégia, performance e resultados reais para quem quer dominar o mercado.",
     "avatar": "/images/avatar.jpg",
     "badges": [
@@ -157,7 +157,7 @@
     }
   ],
   "about": {
-    "text": "Sou Renato Farias, Estrategista Digital e fundador da Origo Company, Openova e Eleve Agência. Há mais de uma década, ajudo empresas e profissionais a transformarem sua presença digital em um motor de crescimento real.\n\nMinha missão é clara: criar estratégias que geram autoridade, atraem clientes qualificados e entregam resultados mensuráveis. Acredito que cada marca tem um potencial único — meu trabalho é desbloqueá-lo.",
+    "text": "Sou Renato Farias, Estrategista Digital e fundador da Origo Company e da Eleve Agência. Há mais de uma década, ajudo empresas e profissionais a transformarem sua presença digital em um motor de crescimento real.\n\nMinha missão é clara: criar estratégias que geram autoridade, atraem clientes qualificados e entregam resultados mensuráveis. Acredito que cada marca tem um potencial único — meu trabalho é desbloqueá-lo.",
     "highlights": [
       {
         "icon": "📍",
@@ -165,7 +165,7 @@
       },
       {
         "icon": "🏢",
-        "text": "Fundador Origo, Openova & Eleve"
+        "text": "Fundador Origo & Eleve"
       },
       {
         "icon": "🎯",
@@ -176,27 +176,33 @@
   "social": [
     {
       "platform": "instagram",
-      "href": "https://www.instagram.com/elevebragencia/",
-      "ariaLabel": "Seguir Eleve Agência no Instagram",
+      "href": "https://www.instagram.com/reinatofarias/",
+      "ariaLabel": "Seguir Renato Farias no Instagram",
       "order": 1,
       "active": true
     },
     {
       "platform": "youtube",
       "href": "https://www.youtube.com/@reinatofarias",
-      "ariaLabel": "Inscrever-se no YouTube",
+      "ariaLabel": "Inscrever-se no canal do YouTube",
       "order": 2,
+      "active": true
+    },
+    {
+      "platform": "whatsapp",
+      "href": "https://wa.me/5581985647633?text=Ol%C3%A1%20Renato!%20Vi%20seu%20link%20e%20gostaria%20de%20conversar.",
+      "ariaLabel": "Conversar com Renato no WhatsApp",
+      "order": 3,
       "active": true
     }
   ],
   "seo": {
     "title": "Renato Farias — Estrategista Digital | Links Oficiais",
-    "description": "Acesse todos os links, serviços e conteúdos de Renato Farias. Estrategista Digital, fundador da Origo Company, Openova e Eleve Agência. Fale comigo e transforme sua presença digital.",
+    "description": "Acesse todos os links, serviços e conteúdos de Renato Farias. Estrategista Digital, fundador da Origo Company e da Eleve Agência. Fale comigo e transforme sua presença digital.",
     "keywords": [
       "Renato Farias",
       "estrategista digital",
       "Origo Company",
-      "Openova",
       "Eleve Agência",
       "marketing digital",
       "estratégia digital",
