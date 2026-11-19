@@ -22,10 +22,10 @@ export function LinksSection({ links }: LinksSectionProps) {
       viewport={{ once: true, margin: "-50px" }}
       className="w-full flex flex-col gap-4 mb-4"
     >
-      <motion.div variants={staggerItem} className="w-full flex items-center justify-center gap-4 mb-2 mt-4">
+      <motion.div variants={staggerItem} className="w-full flex items-center justify-center gap-4 mb-2 mt-10">
         <div className="h-px bg-gradient-to-r from-transparent via-[#d4a937]/40 to-transparent flex-1" />
         <h2 className="text-[11px] md:text-xs font-semibold tracking-[0.35em] uppercase text-[#e8cf86]/80">
-          Links Úteis
+          Conheça meu trabalho
         </h2>
         <div className="h-px bg-gradient-to-r from-transparent via-[#d4a937]/40 to-transparent flex-1" />
       </motion.div>

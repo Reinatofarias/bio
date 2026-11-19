@@ -10,7 +10,6 @@
   --color-glass-border: rgba(255, 255, 255, 0.1);
 
   --font-sans: var(--font-inter), sans-serif;
-  --font-mono: var(--font-jetbrains-mono), monospace;
 
   --animate-float: float 3s ease-in-out infinite;
   --animate-pulse-glow: pulse-glow 2s ease-in-out infinite;
@@ -42,4 +41,38 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+}
+
+/* Fundo: luzes quentes que se movem devagar */
+.bg-aurora {
+  filter: blur(60px);
+  will-change: transform;
+}
+.bg-aurora-1 {
+  background: radial-gradient(circle, rgba(212, 169, 55, 0.30), transparent 65%);
+  transform: translateX(-50%);
+  animation: aurora-1 22s ease-in-out infinite alternate;
+}
+.bg-aurora-2 {
+  background: radial-gradient(circle, rgba(184, 134, 43, 0.22), transparent 65%);
+  animation: aurora-2 28s ease-in-out infinite alternate;
+}
+.bg-aurora-3 {
+  background: radial-gradient(circle, rgba(245, 215, 122, 0.16), transparent 65%);
+  animation: aurora-3 32s ease-in-out infinite alternate;
+}
+@keyframes aurora-1 {
+  from { transform: translate(-50%, 0) scale(1); }
+  to { transform: translate(-42%, 6vh) scale(1.12); }
+}
+@keyframes aurora-2 {
+  from { transform: translate(0, 0) scale(1); }
+  to { transform: translate(12vh, -8vh) scale(1.15); }
+}
+@keyframes aurora-3 {
+  from { transform: translate(0, 0) scale(1.05); }
+  to { transform: translate(-10vh, -6vh) scale(0.95); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .bg-aurora { animation: none; }
 }
