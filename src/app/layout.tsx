@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, JetBrains_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import { GradientBackground } from "@/components/layout/GradientBackground";
 import { MotionProvider } from "@/components/layout/MotionProvider";
@@ -10,11 +10,6 @@ const typedConfig = config as Config;
 
 const inter = Inter({
   variable: "--font-inter",
-  subsets: ["latin"],
-});
-
-const jetbrainsMono = JetBrains_Mono({
-  variable: "--font-jetbrains-mono",
   subsets: ["latin"],
 });
 
@@ -63,7 +58,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" className="scroll-smooth">
       <body
-        className={`${inter.variable} ${jetbrainsMono.variable} font-sans antialiased bg-[#000000] text-zinc-100 selection:bg-brand-primary/30 min-h-screen relative overflow-x-hidden`}
+        className={`${inter.variable} font-sans antialiased bg-[#000000] text-zinc-100 selection:bg-brand-primary/30 min-h-screen relative overflow-x-hidden`}
       >
         {typedConfig.analytics?.googleAnalyticsId && (
           <script

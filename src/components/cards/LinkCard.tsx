@@ -36,7 +36,7 @@ export function LinkCard({ link }: LinkCardProps) {
         whileTap={{ scale: 0.99 }}
         transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
         aria-label={link.description ? `${link.title}: ${link.description}` : link.title}
-        className="relative block w-full aspect-[2/1] rounded-2xl overflow-hidden border border-white/[0.08] shadow-[0_20px_50px_-20px_rgba(0,0,0,0.9)] hover:border-[#d4a937]/40 hover:shadow-[0_24px_60px_-20px_rgba(212,169,55,0.25)] transition-[border-color,box-shadow] duration-500 group mt-4 mb-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#d4a937] focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+        className="relative block w-full aspect-[2/1] rounded-2xl overflow-hidden border border-[#d4a937]/25 shadow-[0_20px_50px_-20px_rgba(0,0,0,0.9),0_0_0_4px_rgba(212,169,55,0.04)] hover:border-[#d4a937]/60 hover:shadow-[0_24px_60px_-20px_rgba(212,169,55,0.25)] transition-[border-color,box-shadow] duration-500 group mt-4 mb-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#d4a937] focus-visible:ring-offset-2 focus-visible:ring-offset-black"
       >
         {link.image && (
           <Image

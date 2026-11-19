@@ -184,21 +184,21 @@
       "href": "https://www.instagram.com/reinatofarias/",
       "ariaLabel": "Seguir Renato Farias no Instagram",
       "order": 1,
-      "active": true
+      "active": false
     },
     {
       "platform": "youtube",
       "href": "https://www.youtube.com/@reinatofarias",
       "ariaLabel": "Inscrever-se no canal do YouTube",
       "order": 2,
-      "active": true
+      "active": false
     },
     {
       "platform": "whatsapp",
       "href": "https://wa.me/5581985647633?text=Ol%C3%A1%20Renato!%20Vi%20seu%20link%20e%20gostaria%20de%20conversar.",
       "ariaLabel": "Conversar com Renato no WhatsApp",
       "order": 3,
-      "active": true
+      "active": false
     }
   ],
   "seo": {
@@ -229,7 +229,7 @@
   },
   "footer": {
     "copyright": "© 2026 Renato Farias. Todos os direitos reservados.",
-    "tagline": "Estratégia que transforma. Resultados que comprovam.",
+    "tagline": "",
     "cnpj": ""
   }
 }

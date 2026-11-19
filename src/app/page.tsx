@@ -2,8 +2,6 @@ import { Container } from "@/components/layout/Container";
 import { HeroSection } from "@/components/sections/HeroSection";
 import { LinksSection } from "@/components/sections/LinksSection";
 
-import { StatsSection } from "@/components/sections/StatsSection";
-import { AboutSection } from "@/components/sections/AboutSection";
 import { SocialSection } from "@/components/sections/SocialSection";
 import { FooterSection } from "@/components/sections/FooterSection";
 import { IntroCTA } from "@/components/sections/IntroCTA";
@@ -23,7 +21,10 @@ export default function Home() {
       <LinksSection links={data.links} />
 
       <MentorshipCTA />
-      <FooterSection footer={data.footer} />
+      <FooterSection
+        footer={data.footer}
+        instagram={data.social.find((s) => s.platform === "instagram")?.href}
+      />
     </Container>
   );
 }
