@@ -31,7 +31,7 @@ export function HeroSection({ profile }: HeroSectionProps) {
           }}
         >
           <Image
-            src="/images/Image-hero.png"
+            src="/images/Image-hero.webp"
             alt=""
             fill
             className="object-cover object-[50%_20%]"

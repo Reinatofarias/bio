@@ -9,6 +9,11 @@ export interface Profile {
     href: string;
     variant: 'primary' | 'secondary' | 'ghost';
   };
+  proof?: {
+    rating: string;
+    clients: string;
+    href: string;
+  };
 }
 
 export interface LinkItem {
