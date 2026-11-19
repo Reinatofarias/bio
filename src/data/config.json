@@ -1,8 +1,8 @@
 {
   "profile": {
     "name": "Renato Farias",
-    "role": "Estrategista Digital | Fundador Origo Company & Eleve Agência",
-    "tagline": "Transformo marcas em máquinas de autoridade e conversão digital. Estratégia, performance e resultados reais para quem quer dominar o mercado.",
+    "role": "Fundador da Origo Company | Marketing, tecnologia e IA",
+    "tagline": "Ajudo empresas a venderem mais com marketing, tecnologia e IA. Fale comigo e receba um diagnóstico gratuito do seu negócio.",
     "avatar": "/images/avatar.jpg",
     "badges": [
       {
@@ -11,23 +11,28 @@
       },
       {
         "icon": "🏢",
-        "text": "3 Empresas"
+        "text": "Origo Company"
       }
     ],
     "cta": {
-      "text": "Fale Comigo Agora",
-      "href": "https://wa.me/5581985647633?text=Olá%20Renato!%20Vi%20seu%20link%20e%20gostaria%20de%20conversar.",
+      "text": "Quero meu diagnóstico gratuito",
+      "href": "https://wa.me/5581985647633?text=Ol%C3%A1%2C%20Renato!%20Vim%20pela%20sua%20bio%20e%20quero%20um%20diagn%C3%B3stico%20gratuito%20do%20meu%20neg%C3%B3cio.",
       "variant": "primary"
+    },
+    "proof": {
+      "rating": "5,0",
+      "clients": "200+",
+      "href": "https://g.page/r/CS9shM6BSzsdEAI/review"
     }
   },
   "links": [
     {
       "id": "origo",
       "title": "Origo Company",
-      "description": "Soluções estratégicas de alta performance para empresas que querem escalar",
-      "href": "https://www.origocompany.org",
+      "description": "Marketing, tecnologia e IA para empresas que querem vender mais",
+      "href": "https://www.origocompany.org/?utm_source=instagram&utm_medium=bio&utm_campaign=arvore_links&utm_content=banner_origo",
       "icon": "Building2",
-      "image": "/images/origo-company.png",
+      "image": "/images/origo-company.webp",
       "variant": "banner",
       "external": true,
       "order": 1,
@@ -51,7 +56,7 @@
       "description": "Conteúdo estratégico sobre marketing digital e negócios",
       "href": "https://www.youtube.com/@reinatofarias",
       "icon": "Youtube",
-      "image": "/images/youtube.png",
+      "image": "/images/youtube.webp",
       "variant": "banner",
       "external": true,
       "order": 2,
@@ -67,7 +72,7 @@
       "variant": "banner",
       "external": true,
       "order": 5,
-      "active": true
+      "active": false
     }
   ],
   "products": [
@@ -141,8 +146,8 @@
     },
     {
       "id": "clientes",
-      "value": "+100",
-      "numericValue": 100,
+      "value": "+200",
+      "numericValue": 200,
       "label": "Clientes Atendidos",
       "prefix": "+",
       "order": 2
@@ -157,19 +162,19 @@
     }
   ],
   "about": {
-    "text": "Sou Renato Farias, Estrategista Digital e fundador da Origo Company e da Eleve Agência. Há mais de uma década, ajudo empresas e profissionais a transformarem sua presença digital em um motor de crescimento real.\n\nMinha missão é clara: criar estratégias que geram autoridade, atraem clientes qualificados e entregam resultados mensuráveis. Acredito que cada marca tem um potencial único — meu trabalho é desbloqueá-lo.",
+    "text": "Sou Renato Farias, Estrategista Digital e fundador da Origo Company. Há mais de uma década, ajudo empresas e profissionais a transformarem sua presença digital em um motor de crescimento real.\n\nMinha missão é clara: criar estratégias que geram autoridade, atraem clientes qualificados e entregam resultados mensuráveis. Acredito que cada marca tem um potencial único — meu trabalho é desbloqueá-lo.",
     "highlights": [
       {
         "icon": "📍",
         "text": "Brasil"
       },
       {
-        "icon": "🏢",
-        "text": "Fundador Origo & Eleve"
-      },
-      {
         "icon": "🎯",
         "text": "Estratégia & Performance Digital"
+      },
+      {
+        "icon": "🏢",
+        "text": "Fundador da Origo Company"
       }
     ]
   },
@@ -198,12 +203,11 @@
   ],
   "seo": {
     "title": "Renato Farias — Estrategista Digital | Links Oficiais",
-    "description": "Acesse todos os links, serviços e conteúdos de Renato Farias. Estrategista Digital, fundador da Origo Company e da Eleve Agência. Fale comigo e transforme sua presença digital.",
+    "description": "Links oficiais de Renato Farias, fundador da Origo Company. Marketing, tecnologia e IA para empresas que querem vender mais. Peça seu diagnóstico gratuito.",
     "keywords": [
       "Renato Farias",
       "estrategista digital",
       "Origo Company",
-      "Eleve Agência",
       "marketing digital",
       "estratégia digital",
       "branding digital"
