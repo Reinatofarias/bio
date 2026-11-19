@@ -2345,7 +2345,7 @@ export interface FooterConfig {
       "id": "origo",
       "title": "Origo Company",
       "description": "Soluções estratégicas de alta performance para empresas que querem escalar",
-      "href": "https://lp.origoprod.com",
+      "href": "https://www.origocompany.org",
       "icon": "Building2",
       "variant": "featured",
       "external": true,
